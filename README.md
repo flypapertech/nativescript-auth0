@@ -91,8 +91,8 @@ You must also update webpack.config.js to include the redirect activity
 ```js
     // Add your custom Activities, Services and other android app components here.
     const appComponents = [
-        "tns-core-modules/ui/frame",
-        "tns-core-modules/ui/frame/activity",
+        "@nativescript/core/ui/frame",
+        "@nativescript/core/ui/frame/activity",
         "nativescript-auth0/android/provider/redirectActivity" // <-- add this line
     ];
 ```

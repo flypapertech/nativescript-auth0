@@ -19,6 +19,7 @@ module.exports = env => {
     appComponents.push(...[
         "@nativescript/core/ui/frame",
         "@nativescript/core/ui/frame/activity",
+        "nativescript-auth0/android/provider/redirectActivity"
     ]);
 
     const platform = env && (env.android && "android" || env.ios && "ios" || env.platform);
