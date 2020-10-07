@@ -1,7 +1,7 @@
 import {
     HttpRequestOptions,
     HttpResponse
-} from 'tns-core-modules/http/http';
+} from '@nativescript/core/http';
 
 import Uri = android.net.Uri;
 

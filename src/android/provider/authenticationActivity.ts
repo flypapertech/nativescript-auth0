@@ -33,6 +33,7 @@ export function authenticateUsingBrowser(context: Context, authorizeUri: Uri, op
 }
 
 @JavaProxy('org.nativescript.auth0.AuthenticationActivity')
+@NativeClass()
 export class AuthenticationActivity extends android.app.Activity {
     private intentLaunched: boolean;
     private customTabsController: CustomTabsController;

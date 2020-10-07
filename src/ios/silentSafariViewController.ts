@@ -1,4 +1,4 @@
-import { device } from 'tns-core-modules/platform/platform';
+import { Device } from '@nativescript/core/platform';
 
 export class SilentSafariViewController extends SFSafariViewController implements SFSafariViewControllerDelegate {
     public onResult: (result: boolean) => void = () => {};
@@ -8,7 +8,7 @@ export class SilentSafariViewController extends SFSafariViewController implement
     }
 
     public initWithURLCallback(URL: NSURL, callback: (result: boolean) => void) {
-        if (Number(device.osVersion.split('.')[0]) >= 11.0) {
+        if (Number(Device.osVersion.split('.')[0]) >= 11.0) {
             super.initWithURLConfiguration(URL, new SFSafariViewControllerConfiguration());
         } else {
             super.initWithURLEntersReaderIfAvailable(URL, false);
